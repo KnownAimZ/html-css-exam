@@ -1,0 +1,51 @@
+@import url('./theme.css');
+
+.main-header {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    height: 55px;
+    width: 100%;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    justify-content: space-between;
+    align-items: center;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+}
+
+.header-menu{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    max-width: 550px;
+}
+
+.header-item-logo{
+    width: 100px;
+    height: 35px;   
+    float: left;
+    
+}
+
+#header-item-logo-img {
+    user-select: none;
+    width: 100%;
+    height: 100%;
+    src: url('../images/logo_light.png');
+}
+
+.header-item:hover, .header-item-login:hover { 
+    font-size: 110%;  
+    text-decoration: underline;
+    cursor: pointer;
+    text-decoration-color: var(--alternative-color);
+    text-decoration-thickness: 2px;
+}
+
+#change-theme{
+    cursor: pointer;
+}
+
+#to-index:focus {
+    outline: none;
+}

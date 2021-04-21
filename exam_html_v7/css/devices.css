@@ -1,0 +1,50 @@
+@import url('./theme.css');
+
+.devices-content{
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column; 
+    text-align: center;
+    color: var(--text-color); 
+    margin-bottom: 30px;   
+}
+
+.devices-text {
+    margin-top: 30px;
+}
+
+.devices-table {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 35px;
+}
+
+.dt-item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 30px;   
+    background-color:var(--main-color);
+    color: var(--text-color);
+    text-align: center
+    
+}
+
+
+@media screen and (min-width: 750px) {
+    .devices-table {
+        flex-direction: row;
+    }
+    .dt-item {        
+        margin-top: 30px;
+        width: 30%;
+        margin-left: 2%;
+        margin-right: 2%;
+       
+    }
+}
+
+
